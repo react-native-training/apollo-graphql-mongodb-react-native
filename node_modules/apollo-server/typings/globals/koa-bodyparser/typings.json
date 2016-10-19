@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/7437a9ab3aab71acaae2db30f627f1d021dcbc62/koa-bodyparser/koa-bodyparser.d.ts",
+    "raw": "registry:dt/koa-bodyparser#3.0.0+20160414124440",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/7437a9ab3aab71acaae2db30f627f1d021dcbc62/koa-bodyparser/koa-bodyparser.d.ts"
+  }
+}
