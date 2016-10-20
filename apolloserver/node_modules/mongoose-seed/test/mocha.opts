@@ -1,3 +1,0 @@
---require test/helpers
---reporter spec
---slow 9000

@@ -1,8 +1,0 @@
-{
-  "resolution": "main",
-  "tree": {
-    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/675b216b6ad599a9dc649a8fb326f367a6dcf748/boom/boom.d.ts",
-    "raw": "registry:dt/boom#0.0.0+20160724101333",
-    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/675b216b6ad599a9dc649a8fb326f367a6dcf748/boom/boom.d.ts"
-  }
-}
