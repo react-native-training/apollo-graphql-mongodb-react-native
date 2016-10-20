@@ -2,7 +2,7 @@ This repo goes along with the Medium post [React Native with Apollo Server and C
 
 # Apollo Server Example
 
-#### Using Express + GraphQL + MongoDB + Express
+#### Using Apollo + GraphQL + MongoDB + Express
 
 To get setup:
 
