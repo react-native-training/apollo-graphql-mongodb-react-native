@@ -24,17 +24,6 @@ Start project server
 
 Open GraphQL Explorer on http://localhost:8080/graphiql
 
-// You may need to seed project with data //
-
-From command line, open MongoDB
-
-```
-> mongo
-> use views
-> db.people.insert({ firstName: "Nader" })
-> db.views.insert({ postId: 0, views: 10 })
-```
-
 # Apollo Client Example
 
 ## Coming Soon...
