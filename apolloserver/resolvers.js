@@ -1,9 +1,7 @@
-const { President } = require('./connectors');
-
 const resolveFunctions = {
   RootQuery: {
-    president(_, { name }) {
-      const president = new President();
+    president(_, { name }, ctx) {
+      const president = new ctx.constructor.President();
       return president.findPresident(name);
     },
   },

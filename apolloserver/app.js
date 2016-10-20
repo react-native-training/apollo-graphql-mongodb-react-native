@@ -7,7 +7,8 @@ const app = express();
 const { apolloExpress, graphiqlExpress } = require('apollo-server');
 const { makeExecutableSchema } = require('graphql-tools');
 
-Mongoose.connect('mongodb://localhost/views', (err) => {
+Mongoose.Promise = global.Promise;
+Mongoose.connect('mongodb://localhost/apollo', (err) => {
   if (err) {
     return err;
   }
@@ -25,13 +26,14 @@ const Connectors = require('./connectors');
 const executableSchema = makeExecutableSchema({
   typeDefs: Schema,
   resolvers: Resolvers,
-  connectors: Connectors,
-  printErrors: true,
 });
 
 app.use('/graphql', bodyParser.json(), apolloExpress({
   schema: executableSchema,
-  context: {},
+  context: {
+    constructor: Connectors,
+  },
+  rootValue: 'Hello World',
 }));
 
 app.use('/graphiql', graphiqlExpress({
