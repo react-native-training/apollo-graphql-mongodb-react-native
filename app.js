@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const { apolloExpress, graphiqlExpress } = require('apollo-server');
 const { makeExecutableSchema } = require('graphql-tools');
 
-const GRAPHQL_PORT = 8080;
-const graphQLServer = express();
+const PORT = 8080;
+const server = express();
 
 const Schema = require('./schema');
 const Resolvers = require('./resolvers');
@@ -17,15 +17,15 @@ const executableSchema = makeExecutableSchema({
   printErrors: true,
 });
 
-graphQLServer.use('/graphql', bodyParser.json(), apolloExpress({
+server.use('/graphql', bodyParser.json(), apolloExpress({
   schema: executableSchema,
-  context: {}, //at least(!) an empty object
+  context: {},
 }));
 
-graphQLServer.use('/graphiql', graphiqlExpress({
+server.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
 }));
 
-graphQLServer.listen(GRAPHQL_PORT, () => console.log(
-  `GraphQL Server is now running on http://localhost:${GRAPHQL_PORT}/graphql`
+server.listen(PORT, () => console.log(
+  `GraphQL Server is now running on http://localhost:${PORT}/graphql`
 ));

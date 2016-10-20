@@ -21,17 +21,17 @@ const PersonSchema = Mongoose.Schema({
 const View = Mongoose.model('views', ViewSchema);
 const PersonForSearch = Mongoose.model('people', PersonSchema, 'people');
 
-class FortuneCookie {
-  constructor() {
-    this.getOne = () => {
-      return rp('http://fortunecookieapi.com/v1/cookie')
-        .then(res => JSON.parse(res))
-        .then((res) => {
-          return res[0].fortune.message;
-        });
-    };
-  }
-}
+// class FortuneCookie {
+//   constructor() {
+//     this.getOne = () => {
+//       return rp('http://fortunecookieapi.com/v1/cookie')
+//         .then(res => JSON.parse(res))
+//         .then((res) => {
+//           return res[0].fortune.message;
+//         });
+//     };
+//   }
+// }
 
 class MongoViews {
   constructor() {
@@ -44,9 +44,7 @@ class MongoViews {
 class Person {
   constructor() {
     this.findPerson = (name) => {
-      console.log('name:::', name);
-      const person = PersonForSearch.findOne({ "firstName" : name }, (error, data) => {
-        console.log('data:', data)
+      const person = PersonForSearch.findOne({ firstName: name }, (error, data) => {
         return data;
       });
       return person;
@@ -54,4 +52,4 @@ class Person {
   }
 }
 
-module.exports = { Person, FortuneCookie, MongoViews };
+module.exports = { Person, MongoViews };
