@@ -1,6 +1,6 @@
-# Apollo Server Example
-
 This repo goes along with the Medium post [React Native with Apollo Server and Client](https://medium.com/@dabit3/react-native-with-apollo-server-and-client-part-1-efb7d15d2361#.8qbyeisdd).
+
+# Apollo Server Example
 
 #### Using Express + GraphQL + MongoDB + Express
 
