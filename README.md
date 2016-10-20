@@ -12,7 +12,7 @@ Clone repository
 
 cd into repository
 
-`cd apollo-graphql-mongodb`
+`cd apollo-graphql-mongodb/apolloserver`
 
 Start MongoDB Server
 
