@@ -14,6 +14,10 @@ cd into repository
 
 `cd apollo-graphql-mongodb/apolloserver`
 
+install dependencies
+
+`yarn`
+
 Start MongoDB Server
 
 `mongod`
