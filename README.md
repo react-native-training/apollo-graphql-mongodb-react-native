@@ -2,7 +2,7 @@ This repo goes along with the Medium post [React Native with Apollo Server and C
 
 There are two parts to this application: the [client](https://github.com/dabit3/apollo-graphql-mongodb-react-native#apollo-client-example) (React Native Application) and the [server](https://github.com/dabit3/apollo-graphql-mongodb-react-native#apollo-server-example) (GraphQL server)
 
-# Apollo Server Example
+# Apollo Server
 
 #### Using Apollo + GraphQL + MongoDB + Express
 
@@ -43,6 +43,6 @@ query {
 ```
 
 
-# Apollo Client Example
+# Apollo Client
 
 ## Coming Soon...
