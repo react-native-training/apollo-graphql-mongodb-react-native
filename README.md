@@ -24,6 +24,19 @@ Start project server
 
 Open GraphQL Explorer on http://localhost:8080/graphiql
 
+Try submitting a query:
+```
+query {
+  president(name: "George Washington") {
+    name
+    term
+    party
+  }
+}
+
+```
+
+
 # Apollo Client Example
 
 ## Coming Soon...
