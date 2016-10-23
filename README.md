@@ -8,7 +8,7 @@ There are two parts to this application: the [client](https://github.com/dabit3/
 
 To get setup:
 
-Clone repository
+clone repository
 
 `git clone git@github.com:dabit3/apollo-graphql-mongodb.git`
 
@@ -45,4 +45,20 @@ query {
 
 # Apollo Client
 
-## Coming Soon...
+To get setup
+
+clone repository (if not already done in step 1):
+
+`git clone git@github.com:dabit3/apollo-graphql-mongodb.git`
+
+cd into repository
+
+`cd apollo-graphql-mongodb/apolloclient`
+
+install dependencies
+
+`yarn`
+
+run project
+
+`react-native run-ios` or `react-native run-android`
