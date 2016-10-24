@@ -18,7 +18,6 @@ class App extends Component {
     })
   }
   render () {
-
     let query = gql`query PresidentQuery($name: String!) { 
       president(name: $name) {
         name
@@ -27,12 +26,12 @@ class App extends Component {
       }
     }`
 
-    const President = (data) => {
+    const President = (props) => {
       return (
         <View style={{paddingLeft: 20, paddingTop: 20}}>
-          <Text>Name: {data.data.president && data.data.president.name}</Text>
-          <Text>Party: {data.data.president && data.data.president.party}</Text>
-          <Text>Term: {data.data.president && data.data.president.term}</Text>
+          <Text>Name: {props.data.president && props.data.president.name}</Text>
+          <Text>Party: {props.data.president && props.data.president.party}</Text>
+          <Text>Term: {props.data.president && props.data.president.term}</Text>
         </View>
       )
     }
