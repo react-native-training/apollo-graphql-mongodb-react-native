@@ -18,7 +18,7 @@ class App extends Component {
     })
   }
   render () {
-    let query = gql`query PresidentQuery($name: String!) { 
+    const query = gql`query PresidentQuery($name: String!) { 
       president(name: $name) {
         name
         term
