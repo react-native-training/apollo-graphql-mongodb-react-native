@@ -26,15 +26,13 @@ class App extends Component {
       }
     }`
 
-    const President = (props) => {
-      return (
-        <View style={{paddingLeft: 20, paddingTop: 20}}>
-          <Text>Name: {props.data.president && props.data.president.name}</Text>
-          <Text>Party: {props.data.president && props.data.president.party}</Text>
-          <Text>Term: {props.data.president && props.data.president.term}</Text>
-        </View>
-      )
-    }
+    const President = ({ data }) => (
+      <View style={{paddingLeft: 20, paddingTop: 20}}>
+        <Text>Name: {data.president && data.president.name}</Text>
+        <Text>Party: {data.president && data.president.party}</Text>
+        <Text>Term: {data.president && data.president.term}</Text>
+      </View>
+    )
     
     const ViewWithData = graphql(query, {
       options: { variables: { name: this.state.name } }
